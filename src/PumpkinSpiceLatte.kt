@@ -1,4 +1,4 @@
-open class PumpkinSpiceLatte(
+internal open class PumpkinSpiceLatte(
     coffeeIntensity: Intensity,
     mlOfMilk: Int,
     val mgOfPumpkinSpice: Int,
@@ -10,7 +10,6 @@ open class PumpkinSpiceLatte(
         println("Pumpkin Spice Latte pumpkin spice: $mgOfPumpkinSpice mg")
     }
 
-    // Method specific to making Pumpkin Spice Latte
     fun makePumpkinSpiceLatte(): PumpkinSpiceLatte {
         val reset = "\u001b[0m"
         val pumpkinSpiceLatte = "\u001b[38;2;255;165;0m" // Rich orange-brown, like a Pumpkin Spice Latte
